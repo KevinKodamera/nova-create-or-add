@@ -101,7 +101,7 @@ export default {
                 `/nova-api/${resourceUri}/creation-fields`
             )
 
-            this.fields = fields
+            this.fields = (fields.fields ? fields.fields : fields)
             this.loading = false
         },
 
